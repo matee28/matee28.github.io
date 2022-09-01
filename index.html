@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>matee28</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script type="text/javascript" src="https://momentjs.com/downloads/moment-timezone-with-data-10-year-range.js"></script>
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="favicon-16x16.ico">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="favicon-32x32.ico">
+    <style>
+      ::-webkit-scrollbar {
+        background: transparent;
+        width: 0px;
+      }
+
+      #navbar-iframe {
+        display: none;
+        height: 0px;
+        visibility: hidden;
+      }
+
+      #element {color: blue;}
+
+      body {
+        background-color: #16161c;
+        font-family: Ubuntu;
+        margin: 16px 16px;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+      }
+
+      a:link {
+        color: #4d4dc7;
+      }
+
+      a:visited {
+        color: #775a95;
+      }
+
+      a:hover {
+        color: #7a7aaf;
+      }
+
+      a:active {
+        color: #cc4d50;
+      }
+
+      .br-small {
+        content: "";
+        display: block;
+        margin-bottom: 16px;
+      }
+
+      .br-small-project {
+        content: "";
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .primary-text {
+        color: #e8e8e8;
+      }
+
+      .secondary-text {
+        color: #99999f;
+      }
+
+      .large-text {
+        font-size: 48px;
+      }
+
+      .medium-text {
+        font-size: 24px;
+      }
+
+      .small-text {
+        font-size: 16px;
+      }
+
+      .project-text {
+        position: relative;
+        width: 95%;
+        left: 8px; 
+        right: 8px;
+        top: 8px;
+        bottom: 0px;
+        margin: 0px 0px;
+      }
+
+      .flag {
+        float: left;
+        font-size: 16px;
+        height: 32px;
+        margin-right: 8px;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .logo {
+        font-size: 16px;
+        height: 32px;
+        margin-left: 8px;
+        vertical-align: middle;
+      }
+
+      .project {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+
+      .project-media {
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        width: 30%;
+      }
+
+      .project-gradient {
+        background-image: linear-gradient(to right, #1e1e2400, #1e1e24ff);
+        float: left;
+        height: 100%;
+        width: 30%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 0;
+      }
+
+      .project-details-container {
+        background-color: #1e1e24ff;
+        height: 100%;
+        width: 70%;
+        float: left;
+        position: absolute;
+        top: 0;
+        left: 30%;
+        right: 0;
+        bottom: 0;
+        margin: 0 0;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+
+      .profile-container {
+        background-color: #1e1e24; 
+        border-radius: 8px;
+        padding: 16px 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-container secondary-text medium-text">
+      <span class="primary-text large-text">matee28</span>
+      <br><br class="br-small">
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/archive/c/c3/20220821155028%21Python-logo-notext.svg" alt="Python logo, www.python.org, GPL <http://www.gnu.org/licenses/gpl.html>, via Wikimedia Commons">
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="Unofficial JavaScript logo, Chris Williams, Public domain, via Wikimedia Commons">
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg" alt="Arduino logo, Unknown author, Public domain, via Wikimedia Commons">
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/5/58/Roblox_Studio_logo_2021_present.svg" alt="Roblox Studio logo, Roblox LLC, Public domain, via Wikimedia Commons">
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" alt="Blender logo, ™/®Blender Foundation, Public domain, via Wikimedia Commons">
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/4/45/The_GIMP_icon_-_gnome.svg" alt="GIMP icon, Tuomas Kuosmanen, GPL <http://www.gnu.org/licenses/gpl.html>, via Wikimedia Commons">
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Audacity_Logo_nofilter.svg" alt="Audacity logo, Simplified Version by Patrick87 (original logo by Aaron Spike), GPL <http://www.gnu.org/licenses/gpl.html>, via Wikimedia Commons">
+      <br class="br-small">
+      <span id="experience"></span>
+      <script type="text/javascript">document.getElementById("experience").textContent = "General experience: " + (Math.round(moment().diff(moment([2021, 0, 2]), "years", true)*10)/10).toString() + " years | ~" + (Math.round(moment().diff(moment([2021, 0, 2]), "days", true)*15.355848434925864)).toString() + " lines of code";</script>
+      <br><br class="br-small">
+      <span>Discord: matee28#1659</span>
+      <br><br class="br-small">
+      <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg" alt="Flag of the Czech Republic, Public domain, via Wikimedia Commons">
+      <span id="timezone"></span>
+      <script type="text/javascript">document.getElementById("timezone").textContent = "UTC/GMT" + moment().tz("Europe/Prague").format("Z").replace("0", "").split(":")[0];</script>
+    </div>
+    <br>
+    <div class="profile-container secondary-text small-text">
+      <span class="medium-text">About me</span>
+      <br>
+      <span class="primary-text">I prefer Python for programming, but I also know the basics of JavaScript, Lua, and C++. I enjoy working with data, such as analyzing, converting, or extracting it. I also sometimes use Blender, in which I have a knowledge of creating materials for objects, basic video editing, and rendering.</span>
+      <br><br class="br-small-project">
+      <em>Note: I only share public projects here.</em>
+    </div>
+  </body>
+</html>
